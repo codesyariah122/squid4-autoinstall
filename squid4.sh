@@ -123,7 +123,6 @@ chown -R proxy:proxy /etc/squid/
 chmod -R 777 /etc/squid/
 echo "buat direktory cache"
 squid -z
-echo "selesai_"
 echo "================================================================"
 echo "untuk mikrotiknya ="
 echo "================================================================"
@@ -154,7 +153,8 @@ echo "jangan lupa configurasi /etc/network/interface nya di bagian dns-nameserve
 echo "unbound-control stats"
 echo "unbound-control stats | tail -16"
 echo "tail -f /var/log/squid/access.log | ccze"
-
+echo -e "Instalasi Unbound dan Squid telah selesai. Agar dapat berjalan, \nsebaiknya restart server anda."
+while true; do
     read -p "Serius Lo Mau Di restart...,Pilih Yes Or No?" yn
     case $yn in
         [Yy]* ) init 6; break;;
