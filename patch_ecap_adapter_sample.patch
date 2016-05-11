@@ -1,0 +1,57 @@
+commit acf18b6b05b8aeb2b55e68f7eeb9211d03b81e62
+Author: Alex Rousskov <rousskov@measurement-factory.com>
+Date:   Tue Aug 26 19:31:04 2014 +0000
+
+    sleep(3) requires <unistd.h> in some environments.
+    
+    LT_INIT evidently provides HAVE_UNISTD_H.
+
+diff --git a/src/adapter_async.cc b/src/adapter_async.cc
+index 8027700..0b39fa5 100644
+--- a/src/adapter_async.cc
++++ b/src/adapter_async.cc
+@@ -1,41 +1,44 @@
+ #include "sample.h"
+ #include "Debug.h"
+ #include <libecap/common/registry.h>
+ #include <libecap/common/errors.h>
+ #include <libecap/adapter/service.h>
+ #include <libecap/adapter/xaction.h>
+ #include <libecap/host/host.h>
+ #include <libecap/host/xaction.h>
+ #include <assert.h>
+ #include <iostream>
+ #include <list>
++#if HAVE_UNISTD_H
++#include <unistd.h>
++#endif
+ #if HAVE_PTHREAD
+ #include <pthread.h>
+ #endif
+ 
+ /*
+  * Warning: This sample code is NOT thread-safe! A production implementation
+  * MUST protect and synchronize shared resources. Most, but probably not all
+  * relevant places are marked with an "XXX". Other than this important caveat,
+  * this sample eCAP adapter illustrates how to orchestrate asynchronous
+  * analysis while keeping the thread-unaware host appliaction happy.
+  */
+ 
+ 
+ namespace Adapter { // not required, but adds clarity
+ 
+ class Xaction;
+ typedef libecap::shared_ptr<Xaction> XactionPointer;
+ 
+ class Service: public libecap::adapter::Service {
+ 	public:
+ 		// About
+ 		virtual std::string uri() const;
+ 		virtual std::string tag() const;
+ 		virtual void describe(std::ostream &os) const;
+ 		virtual bool makesAsyncXactions() const { return true; }
+ 
+ 		// Configuration
+ 		virtual void configure(const libecap::Options &cfg);
+ 		virtual void reconfigure(const libecap::Options &cfg);
+ 
