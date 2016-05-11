@@ -29,7 +29,7 @@ apt-get install git g++-4.4 -y<br>
 <p style="font-weight:bold;">./squid4.sh</p>
 #==========================================<br>
 <p>after reboot <br>
-delete dns-nameserver /etc/network/interfaces or comment #dns-nameserver<br>
+delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers<br>
 <p>/etc/init.d/networking restart<br>
 squid -k reconfigure<br>
 <p>/etc/init.d/squid restart<br>
