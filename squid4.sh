@@ -1,9 +1,11 @@
 #!/bin/bash
-echo -n "masukkan user linux anda : "
-read user
+read -p 'Masukan User Linux Anda: ' uservar
+read -sp 'password Linux Anda: ' passvar
+echo Aku Yakin Kamu pasti bisa, selamat Menginstall yah $uservar
 echo -n "Masukan Nama Anda :"
 read nama
 echo "Hello $nama"
+echo "goodluck $nama"
 echo "udah pada mamam belum? mamam dulu atuh"
 echo "mamam dulu biar ga salatri"
 echo "Informasi Sistem"                                                         
