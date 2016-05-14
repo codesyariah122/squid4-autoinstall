@@ -6,8 +6,43 @@ echo -n "Masukan Nama Anda :"
 read nama
 echo "Hello $nama"
 echo "goodluck $nama"
-echo "udah pada mamam belum? mamam dulu atuh"
-echo "mamam dulu biar ga salatri"
+echo "|=====================================================|"
+echo "|                   Sajak Suara                       |"
+echo "|=====================================================|"
+echo "|     sesungguhnya suara itu tak bisa diredam         |"
+echo "|                mulut bisa dibungkam                 |"
+echo "|  namun siapa mampu menghentikan nyanyian bimbang    |" 
+echo "|    dan pertanyaan-pertanyaan dari lidah jiwaku      |"
+echo "|      suara-suara itu tak bisa dipenjarakan          |"
+echo "|          di sana bersemayam kemerdekaan             |"
+echo "|           apabila engkau memaksa diam               |"
+echo "|       akan kusiapkan untukmu: pemberontakan!        |" 
+echo "|                                                     |"
+echo "|        sesungguhnya suara itu bukan perampok        |"
+echo "|             yang ingin meraih hartamu               |" 
+echo "|                 ia ingin bicara                     |" 
+echo "|            mengapa kau kokang senjata               |"
+echo "|         dan gemetar ketika suara-suara itu          |"
+echo "|                menuntut keadilan?                   |"
+echo "|                                                     |"
+echo "|       sesungguhnya suara itu akan menjadi kata      |"
+echo "|          ialah yang mengajari aku bertanya          |"
+echo "|          dan pada akhirnya tidak bisa tidak         |" 
+echo "|                engkau harus menjawabnya             |"
+echo "|            apabila engkau tetap bertahan            |"
+echo "|         aku akan memburumu seperti kutukan          |"
+echo "|           Wiji Thukul - 1996 (Sajak Suara)          |" 
+echo "|=====================================================|"
+
+echo -e "Selamat datang di installasi server, \n"
+while true; do
+    read -p "Lanjutkan installasi?" yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Tolong jawab yes atau no";;
+    esac
+done
 echo "Informasi Sistem"                                                         
 # informasi perangkat keras                                                     
 echo "++ Perangkat keras "                                                      
@@ -25,7 +60,7 @@ echo -n "Distro Info    :"; lsb_release -a
 echo -n "Anda           :"; whoami
 echo -n "Banyak pemakai :"; who | wc -l
 echo "ok langsung ajah"
-echo "sambil ngopi brayy duduk yang manis yah"
+echo "Jangan lupa kopinya sebagai partner kerja yang tangguh"
 
 cp sysctl.conf /etc/sysctl.conf
 cp limits.conf /etc/security/limits.conf
