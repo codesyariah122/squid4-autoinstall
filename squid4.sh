@@ -165,9 +165,3 @@ while true; do
         * ) echo "Tolong jawab yes atau no";;
     esac
 done
-
-
-
-
-
-
