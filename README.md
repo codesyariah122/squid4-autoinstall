@@ -18,6 +18,10 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-updates main restricted universe multi
 deb http://kambing.ui.ac.id/ubuntu/ vivid-security main restricted universe multiverse<br>
 deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe multiverse<br>
 deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse<br>
+debian 8 jessie
+deb http://kambing.ui.ac.id/debian/ jessie main contrib non-free<br>
+deb http://kambing.ui.ac.id/debian/ jessie-updates main contrib non-free<br>
+deb http://kambing.ui.ac.id/debian-security/ jessie/updates main contrib non-free<br>
 </p>
 <p>already finish installation server,webserver<br>
 <p>apt-get update && apt-get upgrade -y<br>
