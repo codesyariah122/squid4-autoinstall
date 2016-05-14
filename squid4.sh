@@ -1,7 +1,7 @@
 #!/bin/bash
-read -p 'Masukan User Linux Anda: ' uservar
+read -p 'Masukan User Linux Anda: ' userver
 read -sp 'password Linux Anda: ' passvar
-echo Aku Yakin Kamu pasti bisa, selamat Menginstall yah $uservar
+echo Aku Yakin Kamu pasti bisa, selamat Menginstall yah $userver
 echo -n "Masukan Nama Anda :"
 read nama
 echo "Hello $nama"
