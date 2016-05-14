@@ -1,7 +1,49 @@
 #!/bin/bash
-echo "udah pada mamam belum? mamam dulu atuh"
-echo "mamam dulu biar ga salatri"
-echo "Informasi Sistem"                                                         
+read -p 'Masukan User Linux Anda: ' userver
+read -sp 'password Linux Anda: ' passserver 
+echo "Aku Yakin Kamu pasti bisa" 
+echo -e "selamat datang $userver di program installasi\n"
+echo -n "Masukan Nama Anda :"
+read nama
+echo "Hello $nama"
+echo "goodluck $nama"
+echo "oh iya ... !sebelumnya clone dari github git clone https://github.com/puji122/squid4-autoinstall.git"
+echo "|=====================================================|"
+echo "|                   Sajak Suara                       |"
+echo "|=====================================================|"
+echo "|     sesungguhnya suara itu tak bisa diredam         |"
+echo "|                mulut bisa dibungkam                 |"
+echo "|  namun siapa mampu menghentikan nyanyian bimbang    |" 
+echo "|    dan pertanyaan-pertanyaan dari lidah jiwaku      |"
+echo "|      suara-suara itu tak bisa dipenjarakan          |"
+echo "|          di sana bersemayam kemerdekaan             |"
+echo "|           apabila engkau memaksa diam               |"
+echo "|       akan kusiapkan untukmu: pemberontakan!        |" 
+echo "|                                                     |"
+echo "|        sesungguhnya suara itu bukan perampok        |"
+echo "|             yang ingin meraih hartamu               |" 
+echo "|                 ia ingin bicara                     |" 
+echo "|            mengapa kau kokang senjata               |"
+echo "|         dan gemetar ketika suara-suara itu          |"
+echo "|                menuntut keadilan?                   |"
+echo "|                                                     |"
+echo "|       sesungguhnya suara itu akan menjadi kata      |"
+echo "|          ialah yang mengajari aku bertanya          |"
+echo "|          dan pada akhirnya tidak bisa tidak         |" 
+echo "|                engkau harus menjawabnya             |"
+echo "|            apabila engkau tetap bertahan            |"
+echo "|         aku akan memburumu seperti kutukan          |"
+echo "|           Wiji Thukul - 1996 (Sajak Suara)          |" 
+echo "|=====================================================|"
+echo -e "Selamat datang di installasi server, \n"
+while true; do
+    read -p "Lanjutkan installasi?" yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Tolong jawab yes atau no";;
+    esac
+done                                                       
 # informasi perangkat keras                                                     
 echo "++ Perangkat keras "                                                      
 CPU=`grep "model name" /proc/cpuinfo | head -n 1 | cut -f 2 -d ':'`             
@@ -121,8 +163,6 @@ cd
 chown -R nobody /etc/squid/
 chown -R proxy:proxy /etc/squid/
 chmod -R 777 /etc/squid/
-echo "buat direktory cache"
-squid -z
 echo "================================================================"
 echo "untuk mikrotiknya ="
 echo "================================================================"
@@ -153,12 +193,15 @@ echo "jangan lupa configurasi /etc/network/interface nya di bagian dns-nameserve
 echo "unbound-control stats"
 echo "unbound-control stats | tail -16"
 echo "tail -f /var/log/squid/access.log | ccze"
-echo -e "Instalasi Unbound dan Squid telah selesai. Agar dapat berjalan, \nsebaiknya restart server anda."
+echo "buat direktory cache"
+squid -z
+echo "selesai_"
+echo -e "Instalasi Unbound dan Squid telah selesai. , \nsebaiknya restart server anda."
 while true; do
-    read -p "Serius Lo Mau Di restart...,Pilih Yes Or No?" yn
+    read -p "Serius Lo mau Direstart?" yn
     case $yn in
         [Yy]* ) init 6; break;;
         [Nn]* ) exit;;
-        * ) echo "Tolong jawab yes atau no";;
+        * ) echo "jawab aja yes atau no";;
     esac
 done
