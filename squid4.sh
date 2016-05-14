@@ -1,39 +1,6 @@
 #!/bin/bash
-read -p 'Masukan User Linux Anda: ' userver
-read -sp 'password Linux Anda: ' passserver 
-echo "Aku Yakin Kamu pasti bisa" 
-echo "selamat datang $userver di program installasi proxy\n"
-echo "Masukan Nama Anda :"
-read nama
-echo "Hello $nama"
-echo "goodluck $nama"
-echo "|=====================================================|"
-echo "|                   Sajak Suara                       |"
-echo "|=====================================================|"
-echo "|     sesungguhnya suara itu tak bisa diredam         |"
-echo "|                mulut bisa dibungkam                 |"
-echo "|  namun siapa mampu menghentikan nyanyian bimbang    |" 
-echo "|    dan pertanyaan-pertanyaan dari lidah jiwaku      |"
-echo "|      suara-suara itu tak bisa dipenjarakan          |"
-echo "|          di sana bersemayam kemerdekaan             |"
-echo "|           apabila engkau memaksa diam               |"
-echo "|       akan kusiapkan untukmu: pemberontakan!        |" 
-echo "|                                                     |"
-echo "|        sesungguhnya suara itu bukan perampok        |"
-echo "|             yang ingin meraih hartamu               |" 
-echo "|                 ia ingin bicara                     |" 
-echo "|            mengapa kau kokang senjata               |"
-echo "|         dan gemetar ketika suara-suara itu          |"
-echo "|                menuntut keadilan?                   |"
-echo "|                                                     |"
-echo "|       sesungguhnya suara itu akan menjadi kata      |"
-echo "|          ialah yang mengajari aku bertanya          |"
-echo "|          dan pada akhirnya tidak bisa tidak         |" 
-echo "|                engkau harus menjawabnya             |"
-echo "|            apabila engkau tetap bertahan            |"
-echo "|         aku akan memburumu seperti kutukan          |"
-echo "|           Wiji Thukul - 1996 (Sajak Suara)          |" 
-echo "|=====================================================|"
+echo "udah pada mamam belum? mamam dulu atuh"
+echo "mamam dulu biar ga salatri"
 echo "Informasi Sistem"                                                         
 # informasi perangkat keras                                                     
 echo "++ Perangkat keras "                                                      
@@ -51,7 +18,7 @@ echo -n "Distro Info    :"; lsb_release -a
 echo -n "Anda           :"; whoami
 echo -n "Banyak pemakai :"; who | wc -l
 echo "ok langsung ajah"
-echo "Jangan lupa kopinya sebagai partner kerja yang tangguh"
+echo "sambil ngopi brayy duduk yang manis yah"
 
 cp sysctl.conf /etc/sysctl.conf
 cp limits.conf /etc/security/limits.conf
@@ -181,8 +148,8 @@ echo "================================================================"
 echo "setelah reboot"
 echo "squid -k reconfigure"
 echo "/etc/init.d/squid restart"
-echo "jangan lupa konfigurasi /etc/network/interface dan pada bagian dns-nameservers di kosongkan atau beri komen tanda pagar#"
-echo "/etc/init.d/networking restart"
+echo "byee sayang"
+echo "jangan lupa configurasi /etc/network/interface nya di bagian dns-nameserver di kosongkan"
 echo "unbound-control stats"
 echo "unbound-control stats | tail -16"
 echo "tail -f /var/log/squid/access.log | ccze"
