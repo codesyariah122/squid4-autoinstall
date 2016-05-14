@@ -37,3 +37,24 @@ squid -k reconfigure<br>
 <p>dig google.com<br>
 unbound-control stats tail -16<br>
 tail -f /var/log/squid/access.log</p>
+
+
+*notification :
+fyi install the package maintainer's version
+choose 
+if the notification appears when installing software
+─┤ Modified configuration file ├─────────────────────────────────────────────┐
+ │ A new version (/etc/kernel-img.conf.ucf-new) of configuration file /etc/kernel-img.conf is available, but the version  │
+ │ installed currently has been locally modified.                                                                         │
+ │                                                                                                                        │
+ │ What do you want to do about modified configuration file kernel-img.conf?                                              │
+ │                                                                                                                        │
+ │                                  install the package maintainer's version                                              │
+ │                                  keep the local version currently installed                                            │
+ │                                  show the differences between the versions                                             │
+ │                                  show a side-by-side difference between the versions                                   │
+ │                                  start a new shell to examine the situation                                            │
+ │                                                                                                                        │
+ │                                                                                                                        │
+ │                                                         <Ok>                                                           │
+ │                                                                                    
