@@ -43,18 +43,4 @@ tail -f /var/log/squid/access.log</p>
 fyi install the package maintainer's version<br>
 choose : <br>
 if the notification appears when installing software<br>
-─┤ Modified configuration file ├─────────────────────────────────────────────┐<br>
- │ A new version (/etc/kernel-img.conf.ucf-new) of configuration file /etc/kernel-img.conf is available, but the version  │<br>
- │ installed currently has been locally modified.                                                                         │<br>
- │                                                                                                                        │<br>
- │ What do you want to do about modified configuration file kernel-img.conf?                                              │<br>
- │                                                                                                                        │<br>
- │                                  install the package maintainer's version                                              │<br>
- │                                  keep the local version currently installed                                            │<br>
- │                                  show the differences between the versions                                             │<br>
- │                                  show a side-by-side difference between the versions                                   │<br>
- │                                  start a new shell to examine the situation                                            │<br>
- │                                                                                                                        │<br>
- │                                                                                                                        │<br>
- │                                                         <Ok>                                                           │<br>
- │                                                                                    
+__________________________________________________________________________________________________________________________
