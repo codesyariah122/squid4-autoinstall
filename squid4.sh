@@ -34,16 +34,6 @@ echo "|            apabila engkau tetap bertahan            |"
 echo "|         aku akan memburumu seperti kutukan          |"
 echo "|           Wiji Thukul - 1996 (Sajak Suara)          |" 
 echo "|=====================================================|"
-
-echo -e "Selamat datang di installasi server, \n"
-while true; do
-    read -p "Lanjutkan installasi?" yn
-    case $yn in
-        [Yy]* ) break;;
-        [Nn]* ) exit;;
-        * ) echo "Tolong jawab yes atau no";;
-    esac
-done
 echo "Informasi Sistem"                                                         
 # informasi perangkat keras                                                     
 echo "++ Perangkat keras "                                                      
