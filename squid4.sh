@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 echo -n "Masukan Nama Anda :"
 read nama
 echo "Hello $nama"
