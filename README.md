@@ -3,7 +3,7 @@
 <p>mamam dulu atuh bisi salatri </p>
 <p>I use ubuntu 15.04 in session to install this squid4<br>
 my ip address proxy server  192.168.1.200<br>
-you can adjust or replace the ip address you on the config below :<br>
+you can adjust or replace  ip address on the config below :<br>
 -unbound.conf ---->  replace with the your IP address and domain <br>
 -squid.conf ----> replace with your ip address<br>
 -rc.local</p>
