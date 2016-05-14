@@ -27,7 +27,7 @@ deb http://kambing.ui.ac.id/debian-security/ jessie/updates main contrib non-fre
 <p>apt-get update && apt-get upgrade -y<br>
 <p>and install git<br>
 apt-get install git g++-4.4 -y or<br>
-on debian 7-8 --> apt-get install git-all <br>
+on debian 7-8 --> apt-get install git g++ -y apt-get install git-all <br>
 <p style="font-weight:bold;">git clone https://github.com/puji122/squid4.git<br>
 <p style="font-weight:bold;">cd squid4-autoinstall</p<<br>
 <p style="font-weight:bold;">chmod +x squid4.sh<br>
