@@ -1,4 +1,8 @@
 #!/bin/bash
+#!/bin/bash
+echo -n "Masukan Nama Anda :"
+read nama
+echo "Hello $nama"
 echo "udah pada mamam belum? mamam dulu atuh"
 echo "mamam dulu biar ga salatri"
 echo "Informasi Sistem"                                                         
@@ -162,7 +166,6 @@ while true; do
         * ) echo "Tolong jawab yes atau no";;
     esac
 done
-
 
 
 
