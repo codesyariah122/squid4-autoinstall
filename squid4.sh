@@ -2,7 +2,7 @@
 read -p 'Masukan User Linux Anda: ' userver
 read -sp 'password Linux Anda: ' passserver 
 echo "Aku Yakin Kamu pasti bisa" 
-echo -e "selamat datang $userver di program installasi\n"
+echo -e "selamat datang $userver di program installasi proxy\n"
 echo -n "Masukan Nama Anda :"
 read nama
 echo "Hello $nama"
