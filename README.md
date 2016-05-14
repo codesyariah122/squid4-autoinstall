@@ -39,22 +39,22 @@ unbound-control stats tail -16<br>
 tail -f /var/log/squid/access.log</p>
 
 
-*notification :
-fyi install the package maintainer's version
-choose 
-if the notification appears when installing software
-─┤ Modified configuration file ├─────────────────────────────────────────────┐
- │ A new version (/etc/kernel-img.conf.ucf-new) of configuration file /etc/kernel-img.conf is available, but the version  │
- │ installed currently has been locally modified.                                                                         │
- │                                                                                                                        │
- │ What do you want to do about modified configuration file kernel-img.conf?                                              │
- │                                                                                                                        │
- │                                  install the package maintainer's version                                              │
- │                                  keep the local version currently installed                                            │
- │                                  show the differences between the versions                                             │
- │                                  show a side-by-side difference between the versions                                   │
- │                                  start a new shell to examine the situation                                            │
- │                                                                                                                        │
- │                                                                                                                        │
- │                                                         <Ok>                                                           │
+*notification :<br>
+fyi install the package maintainer's version<br>
+choose : <br>
+if the notification appears when installing software<br>
+─┤ Modified configuration file ├─────────────────────────────────────────────┐<br>
+ │ A new version (/etc/kernel-img.conf.ucf-new) of configuration file /etc/kernel-img.conf is available, but the version  │<br>
+ │ installed currently has been locally modified.                                                                         │<br>
+ │                                                                                                                        │<br>
+ │ What do you want to do about modified configuration file kernel-img.conf?                                              │<br>
+ │                                                                                                                        │<br>
+ │                                  install the package maintainer's version                                              │<br>
+ │                                  keep the local version currently installed                                            │<br>
+ │                                  show the differences between the versions                                             │<br>
+ │                                  show a side-by-side difference between the versions                                   │<br>
+ │                                  start a new shell to examine the situation                                            │<br>
+ │                                                                                                                        │<br>
+ │                                                                                                                        │<br>
+ │                                                         <Ok>                                                           │<br>
  │                                                                                    
