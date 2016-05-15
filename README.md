@@ -21,9 +21,9 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe mul
 deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse<br>
 </p>
 <p>already finish installation server,webserver<br>
-<p>apt-get install lsb-release -y </p><br>
-<p>and install git<br>
-apt-get install git g++-4.4 -y<br>
+apt-get install lsb-release -y<br>
+and install git<br>
+apt-get install git g++-4.4 -y</p><br>
 <p style="font-weight:bold;">git clone https://github.com/puji122/squid4-autoinstall.git<br>
 <p style="font-weight:bold;">cd squid4-autoinstall</p<<br>
 <p style="font-weight:bold;">chmod +x squid4.sh<br>
