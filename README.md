@@ -1,5 +1,5 @@
 # squid4
-*I use ubuntu 15.04 in session to install this squid4<br>
+* I use ubuntu 15.04 in session to install this squid4<br>
 my ip address proxy server  192.168.1.200<br>
 dns-nameservers 192.168.1.1 gateway 192.168.1.1<br>
 you can adjust or replace  ip address on the config below :<br>
@@ -7,9 +7,9 @@ you can adjust or replace  ip address on the config below :<br>
 -squid.conf ----> replace with your ip address<br>
 -rc.local</p>
 
-*repository by indonesia server
+* repository by indonesia server
 ```bash
-<p>local repostiroy ubuntu 15.04:
+local repostiroy ubuntu 15.04:
 Indonesia-repository:
 deb http://id.archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse
 deb http://id.archive.ubuntu.com/ubuntu/ vivid-security main restricted universe multiverse 
@@ -20,10 +20,10 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-updates main restricted universe multi
 deb http://kambing.ui.ac.id/ubuntu/ vivid-security main restricted universe multiverse
 deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe multiverse
 deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse
-</p>
 ```
 #installation
 ###already finish installation server,webserver
+start the installation with git clone
 ```
 #install git
 apt-get install git g++-4.4 -y
@@ -33,7 +33,7 @@ chmod +x squid4.sh
 ./squid4.sh</p>
 ```
 
-*after reboot 
+## after reboot 
 ```
 delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers
 /etc/init.d/networking restart
@@ -44,7 +44,7 @@ dig google.com
 unbound-control stats tail -16
 tail -f /var/log/squid/access.log
 ```
-*FYI
+### FYI
 ```
 #notification :
 install the package maintainer's version
