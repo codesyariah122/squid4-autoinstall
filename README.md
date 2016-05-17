@@ -20,6 +20,7 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-security main restricted universe mult
 deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe multiverse<br>
 deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse<br>
 </p>
+```
 <p>already finish installation server,webserver<br>
 apt-get install lsb-release -y<br>
 and install git<br>
@@ -39,6 +40,7 @@ squid -k reconfigure<br>
 unbound-control stats tail -16<br>
 tail -f /var/log/squid/access.log</p>
 
+```
 
 *notification :<br>
 fyi install the package maintainer's version<br>
