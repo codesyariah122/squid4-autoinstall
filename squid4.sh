@@ -43,7 +43,8 @@ while true; do
         [Nn]* ) exit;;
         * ) echo "Tolong jawab yes atau no";;
     esac
-done                                                       
+done
+
 # informasi perangkat keras                                                     
 echo "++ Perangkat keras "                                                      
 CPU=`grep "model name" /proc/cpuinfo | head -n 1 | cut -f 2 -d ':'`             
