@@ -8,6 +8,9 @@ you can adjust or replace  ip address on the config below :<br>
 -unbound.conf ---->  replace with the your IP address and domain <br>
 -squid.conf ----> replace with your ip address<br>
 -rc.local</p>
+
+#repository by indonesia server
+```bash
 <p>local repostiroy ubuntu 15.04:<br>
 Indonesia-repository:<br>
 deb http://id.archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse<br> 
@@ -20,6 +23,9 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-security main restricted universe mult
 deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe multiverse<br>
 deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse<br>
 </p>
+```
+
+
 ```
 <p>already finish installation server,webserver<br>
 apt-get install lsb-release -y<br>
@@ -39,11 +45,11 @@ squid -k reconfigure<br>
 <p>dig google.com<br>
 unbound-control stats tail -16<br>
 tail -f /var/log/squid/access.log</p>
-
 ```
 
 *notification :<br>
 fyi install the package maintainer's version<br>
 choose : <br>
 if the notification appears when installing software<br>
-__________________________________________________________________________________________________________________________
+```
+_________________________________________________________________________________________________________________________
