@@ -11,30 +11,29 @@ you can adjust or replace  ip address on the config below :<br>
 
 #repository by indonesia server
 ```bash
-<p>local repostiroy ubuntu 15.04:<br>
-Indonesia-repository:<br>
-deb http://id.archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse<br> 
-deb http://id.archive.ubuntu.com/ubuntu/ vivid-security main restricted universe multiverse <br>
-deb http://id.archive.ubuntu.com/ubuntu/ vivid-updates main restricted universe multiverse<br>
-local-repository-Kambing.ui.ac.id:<br>
-deb http://kambing.ui.ac.id/ubuntu/ vivid main restricted universe multiverse<br>
-deb http://kambing.ui.ac.id/ubuntu/ vivid-updates main restricted universe multiverse<br>
-deb http://kambing.ui.ac.id/ubuntu/ vivid-security main restricted universe multiverse<br>
-deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe multiverse<br>
-deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse<br>
+<p>local repostiroy ubuntu 15.04:
+Indonesia-repository:
+deb http://id.archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse
+deb http://id.archive.ubuntu.com/ubuntu/ vivid-security main restricted universe multiverse 
+deb http://id.archive.ubuntu.com/ubuntu/ vivid-updates main restricted universe multiverse
+local-repository-Kambing.ui.ac.id:
+deb http://kambing.ui.ac.id/ubuntu/ vivid main restricted universe multiverse
+deb http://kambing.ui.ac.id/ubuntu/ vivid-updates main restricted universe multiverse
+deb http://kambing.ui.ac.id/ubuntu/ vivid-security main restricted universe multiverse
+deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe multiverse
+deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse
 </p>
 ```
-
-
-```
-<p>already finish installation server,webserver<br>
-apt-get install lsb-release -y<br>
-and install git<br>
-apt-get install git g++-4.4 -y</p><br>
-<p style="font-weight:bold;">git clone https://github.com/puji122/squid4-autoinstall.git<br>
-<p style="font-weight:bold;">cd squid4-autoinstall</p<<br>
-<p style="font-weight:bold;">chmod +x squid4.sh<br>
-<p style="font-weight:bold;">./squid4.sh</p>
+#installation
+```bash
+already finish installation server,webserver
+apt-get install lsb-release -y
+and install git
+apt-get install git g++-4.4 -y</p>
+git clone https://github.com/puji122/squid4-autoinstall.git
+cd squid4-autoinstall
+chmod +x squid4.sh<br>
+./squid4.sh</p>
 #==========================================<br>
 <p>after reboot <br>
 delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers<br>
@@ -47,6 +46,7 @@ unbound-control stats tail -16<br>
 tail -f /var/log/squid/access.log</p>
 ```
 
+```
 *notification :<br>
 fyi install the package maintainer's version<br>
 choose : <br>
