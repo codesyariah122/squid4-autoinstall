@@ -47,10 +47,3 @@ dig google.com
 unbound-control stats tail -16
 tail -f /var/log/squid/access.log
 ```
-### FYI
-```bash
-#notification :
-install the package maintainer's version
-choose : 
-if the notification appears when installing software
-```
