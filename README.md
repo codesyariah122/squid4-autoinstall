@@ -25,25 +25,25 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe mult
 </p>
 ```
 #installation
-```bash
-already finish installation server,webserver
-apt-get install lsb-release -y
-and install git
-apt-get install git g++-4.4 -y</p>
+###already finish installation server,webserver
+```
+#install git
+apt-get install git g++-4.4 -y
 git clone https://github.com/puji122/squid4-autoinstall.git
 cd squid4-autoinstall
-chmod +x squid4.sh<br>
+chmod +x squid4.sh
 ./squid4.sh</p>
-#==========================================<br>
-<p>after reboot <br>
-delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers<br>
-<p>/etc/init.d/networking restart<br>
-squid -k reconfigure<br>
-<p>/etc/init.d/squid restart<br>
-/etc/init.d/unbound restart<br>
-<p>dig google.com<br>
-unbound-control stats tail -16<br>
-tail -f /var/log/squid/access.log</p>
+```
+```
+###after reboot 
+delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers
+/etc/init.d/networking restart
+squid -k reconfigure
+/etc/init.d/squid restart
+/etc/init.d/unbound restart
+dig google.com
+unbound-control stats tail -16
+tail -f /var/log/squid/access.log
 ```
 
 ```
