@@ -34,7 +34,8 @@ cd squid4-autoinstall
 chmod +x squid4.sh
 ./squid4.sh</p>
 ```
-```
+
+```bash
 ###after reboot 
 delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers
 /etc/init.d/networking restart
@@ -52,4 +53,3 @@ fyi install the package maintainer's version<br>
 choose : <br>
 if the notification appears when installing software<br>
 ```
-_________________________________________________________________________________________________________________________
