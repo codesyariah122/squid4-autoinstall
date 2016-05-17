@@ -24,9 +24,9 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-backports main restricted universe mul
 deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe multiverse
 </p>
 ```
+```
 #installation
 ###already finish installation server,webserver
-```
 #install git
 apt-get install git g++-4.4 -y
 git clone https://github.com/puji122/squid4-autoinstall.git
@@ -35,8 +35,8 @@ chmod +x squid4.sh
 ./squid4.sh</p>
 ```
 
-```bash
-###after reboot 
+```
+#after reboot 
 delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers
 /etc/init.d/networking restart
 squid -k reconfigure
@@ -48,8 +48,8 @@ tail -f /var/log/squid/access.log
 ```
 
 ```
-*notification :<br>
-fyi install the package maintainer's version<br>
-choose : <br>
-if the notification appears when installing software<br>
+#notification :
+fyi install the package maintainer's version
+choose : 
+if the notification appears when installing software
 ```
