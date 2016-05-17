@@ -1,12 +1,13 @@
 
 # squid4 for autoinstall  with dns-crypt&unbound
-* I use ubuntu 15.04 in session to install this squid4<br>
-* my ip address proxy server  192.168.1.200<br>
-* dns-nameservers 192.168.1.1 gateway 192.168.1.1<br>
-# you can adjust or replace  ip address on the config below :<br>
-*unbound.conf ---->  replace with the your IP address proxy and domain <br>
-*squid.conf ----> replace with your ip address proxy<br>
-*rc.local ----> replace with your ip address proxy
+* I use ubuntu 15.04 in session to install this squid4
+* my ip address proxy server  192.168.1.200
+* dns-nameservers 192.168.1.1 gateway 192.168.1.1
+
+# you can adjust or replace  ip address on the config below :
+* unbound.conf ---->  replace with the your IP address proxy and domain
+* squid.conf ----> replace with your ip address proxy
+* rc.local ----> replace with your ip address proxy
 
 # repository by indonesia server
 ```bash
