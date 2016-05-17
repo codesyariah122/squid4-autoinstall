@@ -30,7 +30,7 @@ apt-get install git g++-4.4 -y
 git clone https://github.com/puji122/squid4-autoinstall.git
 cd squid4-autoinstall
 chmod +x squid4.sh
-./squid4.sh</p>
+./squid4.sh
 ```
 
 ## after reboot 
