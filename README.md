@@ -4,7 +4,7 @@
 * my ip address proxy server  192.168.1.200
 * dns-nameservers 192.168.1.1 gateway 192.168.1.1
 
-# you can adjust or replace  ip address on the config below :
+# replace with your ip address on the config below :
 * unbound.conf ---->  replace with the your IP address proxy and domain
 * squid.conf ----> replace with your ip address proxy
 * rc.local ----> replace with your ip address proxy
