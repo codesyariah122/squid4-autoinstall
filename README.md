@@ -24,7 +24,7 @@ deb http://kambing.ui.ac.id/ubuntu/ vivid-proposed main restricted universe mult
 #installation
 ###already finish installation server,webserver
 start the installation with git clone
-```
+```bash
 #install git
 apt-get install git g++-4.4 -y
 git clone https://github.com/puji122/squid4-autoinstall.git
@@ -34,7 +34,7 @@ chmod +x squid4.sh
 ```
 
 ## after reboot 
-```
+```bash
 delete dns-nameservers di /etc/network/interfaces or comment #dns-nameservers
 /etc/init.d/networking restart
 squid -k reconfigure
@@ -45,7 +45,7 @@ unbound-control stats tail -16
 tail -f /var/log/squid/access.log
 ```
 ### FYI
-```
+```bash
 #notification :
 install the package maintainer's version
 choose : 
