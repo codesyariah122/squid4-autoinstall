@@ -88,8 +88,8 @@ cd -
 tar -xzvf dnscrypt-proxy-1.4.0.tar.gz
 
 cd dnscrypt-proxy-1.4.0
-./configure && make && make install
 ln -s /usr/local/lib/libsodium.so.13 /usr/lib/libsodium.so.13
+./configure && make && make install
 /usr/local/sbin/dnscrypt-proxy -a 127.0.0.1:40 -d -R d0wn-sg-ns1 -e 4096 -p /run/dnscrypt-proxy.pid
 netstat -tapen | grep ":40 "
 
