@@ -17,7 +17,7 @@ use subs 'log';
 $|++;
 
 my $debug = 0;
-my $dbase = "hsc-dynamic-cache-db.txt";
+my $dbase = "squid-cache.txt";
 my $encoding = ":encoding(UTF-8)";
 my %patterns = ();
 
