@@ -121,14 +121,12 @@ tar -xzf libecap-1.0.0.tar.gz
 cp DSI_ecap_youtube.so /usr/local/lib/
 cd libecap-1.0.0
 ./configure && make && make install
-echo '/usr/local/lib' >> /etc/ld.so.conf
-ldconfig
 
 cd -
+echo '/usr/local/lib' >> /etc/ld.so.conf
+ldconfig
 tar -xzf ecap_adapter_sample-1.0.0.tar.gz
-cp patch_ecap_adapter_sample.patch ecap_adapter_sample-1.0.0/
 cd ecap_adapter_sample-1*
-patch -p1 < patch_ecap_adapter_sample.patch
 ./configure && make && make install
 
 cd -
