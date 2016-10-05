@@ -55,7 +55,7 @@ echo "++ Sistem Operasi "
 # informasi sistem operasi                                                      
 OS=`uname -sr`                                                                  
 echo " |- OS : " $OS                                                            
-echo " |- Shell : " $SHELL
+echo " |- Shell : " $SHELL --version
 echo -n "Waktu system   :"; date
 echo -n "Distro Info    :"; lsb_release -a
 echo -n "Anda           :"; whoami
