@@ -190,7 +190,12 @@ distance = 1
 scope = 30
 target scope = 10
 routing_mark = via_squid"
-
+echo "================================================================"
+echo " setting unbound di mikrotiknya"
+echo "================================================================"
+echo "/ip firewall nat
+add action=dst-nat chain=dstnat comment='DNS Proxy' disabled=yes dst-port=53 protocol=udp to-addresses=192.168.4.2 to-ports=53 src-address-list=Client dst-address-list=!Transparent
+add action=dst-nat chain=dstnat comment='DNS Proxy' disabled=yes dst-port=53 protocol=tcp to-addresses=192.168.4.2 to-ports=53 src-address-list=Client dst-address-list=!Transparent"
 echo "================================================================"
 echo "/ip firewall mangle
 add chain = prerouting
